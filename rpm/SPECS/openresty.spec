@@ -1,5 +1,5 @@
 Name:           openresty
-Version:        1.21.4.1
+Version:        1.21.4.2rc1
 Release:        1%{?dist}
 Summary:        OpenResty, scalable web platform by extending NGINX with Lua
 
