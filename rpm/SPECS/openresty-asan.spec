@@ -25,6 +25,7 @@ BuildRequires:  openresty-pcre2-asan-devel >= 10.44-1
 Requires:       openresty-zlib-asan >= 1.2.12-1
 Requires:       openresty-openssl3-asan >= 3.0.15-1
 Requires:       openresty-pcre2-asan >= 10.44-1
+Requires:       gd-devel
 
 AutoReqProv:        no
 
@@ -105,6 +106,7 @@ export ASAN_OPTIONS=detect_leaks=0
     --without-http_rds_json_module \
     --without-http_rds_csv_module \
     --without-lua_rds_parser \
+    --with-http_image_filter_module \
     --with-stream \
     --with-stream_ssl_module \
     --with-stream_ssl_preread_module \

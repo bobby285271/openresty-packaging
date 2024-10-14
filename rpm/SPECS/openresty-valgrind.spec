@@ -25,6 +25,7 @@ BuildRequires:  openresty-pcre2-devel >= 10.44-1
 Requires:       openresty-zlib >= 1.2.12-1
 Requires:       openresty-openssl3-debug >= 3.0.15-1
 Requires:       openresty-pcre2 >= 10.44-1
+Requires:       gd-devel
 
 AutoReqProv:        no
 
@@ -98,6 +99,7 @@ a single box.
     --without-http_rds_json_module \
     --without-http_rds_csv_module \
     --without-lua_rds_parser \
+    --with-http_image_filter_module \
     --with-stream \
     --with-stream_ssl_module \
     --with-stream_ssl_preread_module \
